@@ -2,10 +2,13 @@
 name: 'SSH Deploy Github Action'
 description: 'Deploy production ready code via SSH'
 inputs:
-  who-to-greet:  # id of input
+  host:
     description: 'Who to greet'
     required: true
-    default: 'World'
+  port:
+    description: 'Who to greet'
+    required: false
+    default: '22'
 outputs:
   time: # id of output
     description: 'The time we greeted you'
