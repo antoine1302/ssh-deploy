@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -l
 
 mkdir ~/.ssh
 echo "$INPUT_KEY" > ~/.ssh/id_rsa && chmod 700 ~/.ssh/id_rsa
