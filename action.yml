@@ -3,17 +3,24 @@ name: 'SSH Deploy Github Action'
 description: 'Deploy production ready code via SSH'
 inputs:
   host:
-    description: 'Who to greet'
+    description: 'SSH server host'
     required: true
   port:
-    description: 'Who to greet'
+    description: 'SSH server port'
     required: false
     default: '22'
+  username:
+    description: 'SSH user'
+    required: true
 outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  list:
+    description: 'List directory'
+  whereami:
+    description: 'Get current directory'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.who-to-greet }}
+    - ${{ inputs.host }}
+    - ${{ inputs.port }}
+    - ${{ inputs.username }}
