@@ -1,4 +1,4 @@
-#!/bin/bash -l
+#!/bin/sh -l
 
 echo "INPUT_HOST: $INPUT_HOST"
 echo "INPUT_PORT: $INPUT_PORT"

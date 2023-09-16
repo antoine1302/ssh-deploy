@@ -9,11 +9,11 @@ inputs:
     description: 'SSH server port'
     required: false
     default: '22'
-  repository-name:
-    description: 'Repository name'
   username:
     description: 'SSH user'
     required: true
+  repository:
+    description: 'Repository name'
 outputs:
   list:
     description: 'List directory'
@@ -26,4 +26,4 @@ runs:
     - ${{ inputs.host }}
     - ${{ inputs.port }}
     - ${{ inputs.username }}
-    - ${{ inputs.repository-name }}
+    - ${{ inputs.repository }}
