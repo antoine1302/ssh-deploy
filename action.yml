@@ -12,9 +12,6 @@ inputs:
   username:
     description: 'SSH user'
     required: true
-  key:
-    description: : 'SSH key'
-    required: true
   repository:
     description: 'Repository name'
 outputs:
@@ -29,5 +26,4 @@ runs:
     - ${{ inputs.host }}
     - ${{ inputs.port }}
     - ${{ inputs.username }}
-    - ${{ inputs.key }}
     - ${{ inputs.repository }}
