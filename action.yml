@@ -9,11 +9,11 @@ inputs:
     description: 'SSH server port'
     required: false
     default: '22'
+  repository-name:
+    description: 'Repository name'
   username:
     description: 'SSH user'
     required: true
-  repository-name:
-    description: 'Repository name'
 outputs:
   list:
     description: 'List directory'
