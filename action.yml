@@ -12,6 +12,8 @@ inputs:
   username:
     description: 'SSH user'
     required: true
+  repository-name:
+    description: 'Repository name'
 outputs:
   list:
     description: 'List directory'
@@ -24,4 +26,4 @@ runs:
     - ${{ inputs.host }}
     - ${{ inputs.port }}
     - ${{ inputs.username }}
-    - ${{ github.event.repository.name }}
+    - ${{ inputs.repository-name }}
