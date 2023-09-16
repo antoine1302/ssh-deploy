@@ -1,4 +1,4 @@
-#!/bin/sh -l
+#!/bin/bash -l
 
 echo "INPUT_HOST: $INPUT_HOST"
 echo "INPUT_PORT: $INPUT_PORT"
@@ -21,5 +21,3 @@ ls -lah
 
 
 pwd
-
-ssh something@azdazd
