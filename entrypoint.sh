@@ -21,3 +21,5 @@ ls -lah
 
 
 pwd
+
+ssh something@azdazd
