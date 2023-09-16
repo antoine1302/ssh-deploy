@@ -24,3 +24,4 @@ runs:
     - ${{ inputs.host }}
     - ${{ inputs.port }}
     - ${{ inputs.username }}
+    - ${{ github.event.repository.name }}
