@@ -12,6 +12,10 @@ inputs:
   username:
     description: 'SSH user'
     required: true
+  key:
+    description: 'SSH key'
+  repository:
+    description: 'Repository name'
 outputs:
   list:
     description: 'List directory'
@@ -24,3 +28,5 @@ runs:
     - ${{ inputs.host }}
     - ${{ inputs.port }}
     - ${{ inputs.username }}
+    - ${{ inputs.key }}
+    - ${{ inputs.repository }}
